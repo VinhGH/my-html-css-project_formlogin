@@ -1,0 +1,215 @@
+/* Styles for the login interface */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.15)),
+        url(/imgs/3a90bcf70b736b534ad2a710d085a67c817adf90.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.login-box {
+    background: #fff;
+    width: 90%;
+    max-width: 420px;
+    margin: 74px 430px;
+    padding: 40px 32px 32px;
+    border-radius: 16px;
+    border: 1px solid rgba(102, 102, 102, 0.25);
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 516px;
+}
+
+@media (min-width: 1440px) {
+    .login-box {
+        max-width: 580px;
+    }
+}
+
+/* Logo */
+.logo img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    color: #C4C4C4;
+}
+
+/* Label */
+.input-label {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    /* gap: 4px; */
+    font-weight: 400;
+    font-style: regular;
+    line-height: 100%;
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: #666666;
+}
+
+/* Tiêu đề + mô tả */
+.login-box h1 {
+    font-style: Medium;
+    line-height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    max-width: 252px;
+    margin-bottom: 8px;
+}
+
+.login-box p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #666666;
+    /* căn cách với trên và dưới */
+}
+
+/* Phone input */
+.phone-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding: 0 32px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    border-radius: 12px;
+    background: #fff;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
+
+.flag-select {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.phone-input .flag-icon {
+    width: 36px;
+    height: 22px;
+    margin-top: 2px;
+}
+
+.dropdown-icon {
+    width: 24px;
+    height: 24px;
+    padding: 1px 0 1px;
+}
+
+.phone-input input {
+    flex: 1;
+    border: none;
+    width: 19px;
+    font-family: 'Poppins', sans-serif;
+    height: 27px;
+    font-weight: 400;
+    outline: none;
+    line-height: 100%;
+    background: transparent;
+    font-size: 18px;
+    color: #111111;
+}
+
+/* Continue button */
+.continue-btn {
+    height: 56px;
+    font-weight: 400;
+    line-height: 100%;
+    width: 100%;
+    font-size: 21px;
+    color: #FFFFFF;
+    background-color: #C4C4C4;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+/* OR divider */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 33px;
+    margin-bottom: 32px;
+    color: #888;
+    font-size: 24px;
+    gap: 23px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px dashed #ccc;
+}
+
+.social-login-buttons {
+    max-width: 516px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Social buttons */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 516px;
+    height: 56px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.social-btn img.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.social-btn:last-child {
+    margin-bottom: 0;
+}
+
+/* Link cuối */
+.login-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: #888;
+    font-size: 16px;
+    line-height: 100%;
+    margin-top: 22px;
+}
+
+.login-link a {
+    font-family: 'Poppins', sans-serif;
+    font-style: solid;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #000;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
