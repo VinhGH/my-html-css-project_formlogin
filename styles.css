@@ -12,7 +12,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 1),
             rgba(0, 0, 0, 0.1),
             rgba(0, 0, 0, 0.15)),
-        url(imgs/3a90bcf70b736b534ad2a710d085a67c817adf90.jpg) no-repeat center center;
+        url(imgs/background.jpg) no-repeat center center;
     background-size: cover;
 }
 
